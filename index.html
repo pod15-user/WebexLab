@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Better Bikes Inc | Bikes, better</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon"href="https://cdn.glitch.global/83a10884-cec3-4518-b89b-9e37d73fa498/favicon.ico?v=1711363907655" type="image/x-icon!">
+</head>
+<body>
+  <header>
+    <nav class="navMenu" id="myNavMenu">
+      <div class="navColL">
+        <a href="https://pod00-user.github.io/WebexLab/index.html"><img id="logo" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/BetterBikesInc._white_11398667683655041.png" alt="logo">
+        <img id="smallLogo" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/BetterBikesInc_iconOnlyW_png_11402228692944843.png" alt="logo"></a>
+      </div>
+      <div class="navColR">
+        <span style="color: #fff;"><i id="basket" class="fas fa-shopping-basket" title="(1) item in basket"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://pod00-user.github.io/WebexLab/return.html" style="color: #fff;"><i class="fas fa-shipping-fast" title="Your orders"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://pod00-user.github.io/WebexLab/account.html" style="color: #fff;"><i class="fas fa-user" title="Your profile"></i></a></span>
+      </div>
+    </nav>
+  </header>
+  <div id="container">
+    <div id="defaultDiv">
+      <img class="heroPic" src="https://i.imgur.com/feXk069.jpg" alt="Bike background image" style="object-position: 50% 56%;">
+      <div class="clear"></div>
+      <br>
+      <!-- This below section will display when an account *IS NOT* returned -->
+      <div id="createAccount">
+        <h2>Confirm your order</h2>
+        <div class="clear"></div>
+        <br>
+        <div class="section-body">
+          <div class="card">
+            <img src="https://i.imgur.com/z5g8z36.jpg" alt="The Ridgeway bike" style="width:100%">
+            <p class="price"></p>
+            <p class="product"><b></b></p>
+            <p>any mountain, any surface</p>
+            <p class="selected">SELECTED</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <br>
+        <div class="text">
+          <p>Before you place your order, please <b>create an account</b>.</p>
+        </div>
+        <div class="formBox">
+          <p>&nbsp;<a href="https://pod00-user.github.io/WebexLab/account.html" class="form-enter">Create Account</a><br></p>
+        </div>
+      </div>
+      
+      <!-- This below section will display when an account *IS* returned -->
+      <div id="before">
+        <h2>Confirm your order</h2>
+        <div class="clear"></div>
+        <br>
+        <div class="section-body">
+          <div class="card">
+            <img src="https://i.imgur.com/z5g8z36.jpg" alt="The Ridgeway bike" style="width:100%">
+            <p class="price"></p>
+            <p class="product"><b></b></p>
+            <p>any mountain, any surface</p>
+            <p class="selected">SELECTED</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <br>
+        <div class="text">
+          <p>To receive a delivery confirmation for your order, <b>please tap enter</b>.</p>
+        </div>
+        <div class="formBox">
+          <p>&nbsp;</p>
+          <p>&nbsp;<a href="#" class="form-enter" id="form-enter">Enter</a><br></p>
+        </div>
+      </div>
+      <!-- This below section will display when an order has been placed -->
+      <div id="complete-message" style="display:none;">
+        <h2>Thank you</h2>
+        <div class="text">
+          <p>Order ID - <b><span class="orderId"></span></b></p>
+        </div>
+        <hr style="max-width:95%;">
+        <div class="row">
+          <div class="column">
+            <p>You should receive an email shortly with confirmation for your order, ID: <b><span class="orderId"></span></b>.<br>Please check your junk folder.</p>
+          </div>
+          <div class="column2">
+            <img src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/3213270_communication_email_letter_mail_message_icon_2229218449389959.png" alt="email icon" style="max-width: 40px;display: block;margin-left: auto;margin-right: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <br>
+  </div>	
+  <footer>
+    <span>
+      <img style="width:40px; display: inline-block; float: left; margin-top: -10px; margin-bottom:auto;" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/BetterBikesInc_iconOnlyW_png_11402228692944843.png" alt="logo">
+      <p style="display: inline-block; margin:auto;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Better Bikes Inc.&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;a Cisco demo brand</p>
+    </span>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script></script>
+</body>
+</html>

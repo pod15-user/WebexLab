@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Better Bikes Inc | Your account</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon"href="https://cdn.glitch.global/83a10884-cec3-4518-b89b-9e37d73fa498/favicon.ico?v=1711363907655" type="image/x-icon!">
+</head>
+<body>
+  <header>
+    <nav class="navMenu" id="myNavMenu">
+      <div class="navColL">
+        <a href="https://pod00-user.github.io/WebexLab/index.html"><img id="logo" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/BetterBikesInc._white_11398667683655041.png" alt="logo">
+        <img id="smallLogo" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/BetterBikesInc_iconOnlyW_png_11402228692944843.png" alt="logo"></a>
+      </div>
+      <div class="navColR">
+        <span style="color: #fff;"><a href="https://pod00-user.github.io/WebexLab/return.html" style="color: #fff;"><i class="fas fa-shipping-fast" title="Your orders"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-user" title="Your profile"></i></span>
+      </div>
+    </nav>
+  </header>
+  <div id="container">
+    <div id="defaultDiv">
+      <img class="heroPic" src="https://i.imgur.com/b5XhLBv.jpeg" alt="Bike background image" style="object-position: 50% 56%;">
+      <div class="clear"></div>
+      <br>
+      <div id="before">
+        <h2>Manage your account</h2>
+        <div class="clear"></div>
+        <div class="text">
+          <p>To manage accounts please interact below.</p>
+        </div>
+        <!-- This below section will display when an account *IS* returned -->
+        <div id="accountReturned">
+          <div class="row">
+            <div class="column" style="flex:40; align-items:end;">
+              <p class="accountData"><b>Name</b>:
+              <br>
+              <b>Email address</b>:
+              <br>
+              <b>Main phone number</b>:
+              <br>
+              <b>Secondary phone number</b>:
+              <br>
+              <b>Your dedicated customer service line</b>:</p>
+            </div>
+            <div class="column2" style="flex:60; align-items:start;">
+              <p  class="accountData"> <span class="customerName"></span>
+              <br>
+              <span id="customerEmail"></span>
+              <br>
+              <span id="mainTel"></span>
+              <br>
+              <span id="secondaryTel"></span>
+              <br>
+              <span id="ccTel"></span></p>
+            </div>
+          </div>
+          <p style="max-width: 80%;margin:auto;">&nbsp;<a href="#" class="form-enter" id="delete-enter" >delete / re-create</a><br></p>
+        </div>
+        <!-- This below section will display when an account *IS NOT* returned -->
+        <div id="newAccount">
+          <div class="row">
+            <div class="column">
+              <div class="text">
+                <p>Please enter details to create an account for your lab. You will need your lab details for some of the fields below.</p>
+              </div>
+              <div class="formBox">
+                <p>&nbsp;</p>
+                <input type="text" id="customerName-enter" name="Name" class="form" placeholder="First & Last name">
+                <p>&nbsp;</p>
+                <input type="text" id="customerEmail-enter" name="Clubcard number" class="form" placeholder="Add your lab email address">
+                <p>&nbsp;</p>
+                <input type="email" id="mainTel-enter" name="Email" class="form" placeholder="Add the phone number to use for your lab">
+                <p>&nbsp;</p>
+                <input type="text" id="secondaryTel-enter" name="Subject" class="form" placeholder="Add 2nd phone number (your mobile or your lab phone number)">
+                <p>&nbsp;</p>
+                <input type="text" id="ccTel-enter" name="Message" class="form" placeholder="Add your dedicated customer service lab phone number">
+                <p>&nbsp;<a href="#" class="form-enter" id="create-enter" >Enter</a><br></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- This below section will display when an account has been created -->
+      <div id="complete-message" style="display:none;">
+        <h2>Thank you</h2>
+        <div class="text">
+          <p>Account created.</p>
+        </div>
+        <hr style="max-width:95%;">
+        <div class="row">
+          <div class="column">
+            <p>Thank you <b><span class="customerName"></span></b>, your account is now <span id="route"></span>.</p>
+          </div>
+          <div class="column2">
+            <img src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/user_2543674822080336.png" alt="user icon" style="max-width: 45px;display: block;margin-left: auto;margin-right: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <br>
+  </div>	
+  <footer>
+    <span>
+      <img style="width:40px; display: inline-block; float: left; margin-top: -10px; margin-bottom:auto;" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/BetterBikesInc_iconOnlyW_png_11402228692944843.png" alt="logo">
+      <p style="display: inline-block; margin:auto;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Better Bikes Inc.&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;a Cisco demo brand</p>
+    </span>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script></script>
+</body>
+</html>
